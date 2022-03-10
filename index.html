@@ -77,11 +77,11 @@
                 <h1>Reported posts</h1>
             </div>
 
-            <section>
+            <section id="details">
                 <article>
                     <div>
                        <h1>Event Loop</h1>
-                       <p>First JavaScript code runs in call stack. Call stack read code line by line. When it's get a asynchronous code, it's immediately pass the code in assist api and it's go next code. When asynchronous code is ready then api push the code in callback queue. When call stack is done his work then event loop push the code in call stack and code execute.</p>
+                       <p>First JavaScript code runs in call stack. Call stack read code line by line. When it's get a asynchronous function, it's immediately pass the code in assist api and it's go next code. When asynchronous function is ready then api push the code in callback queue. When call stack is done his work then event loop push the code in call stack and code execute.</p>
                     </div>
                 </article>
 
@@ -109,6 +109,8 @@
                             <li>Session storage changes are only available per tab.</li>
                             <li>It's saved and available for the current page in that tab until it is closed.</li>
                             <li>Once tab   is closed, the stored data is deleted.</li>
+                            <li>SessionStorage data can not use log term.</li>
+                            <li>Automatically delete it's data.</li>
                         </ul>
                     </div>
                 </article>
